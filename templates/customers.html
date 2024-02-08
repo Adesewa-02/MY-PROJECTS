@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <p>Customer's profile page{{customers.name}}</p>
+
+    <table>
+        <thread>
+            <tr>
+                <td>ID</td>
+                <td>NAME</td>
+                <td>INTEREST</td>
+            </tr>
+            <tr>
+                <td>{{ det.id}}</td>
+                <td>{{ det.name}}</td>
+                <td>{{ det.interst}}</td>
+            </tr>
+        </thread>
+    </table>
+{% endblock content %}

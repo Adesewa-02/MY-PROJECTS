@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h2>You are welcome</h3>
+
+        {% for customers_profile in customers %}
+            <div>
+                <h3>Customer's name is {{customers_profile.name}} </h3>
+                <h3><a href="{% url 'customersprofile' customers_profile.id %}">Click here to view the full info</a></h3>
+            </div>
+        {% endfor %}
+{% endblock  %}
